@@ -1,0 +1,13 @@
+services:
+  addition:
+    build: ./sum-service
+  division:
+    build: ./div-service
+  multiplication:
+    build: ./mul-service
+  substraction:
+    build: ./sub-service
+  calculator:
+    build: ./calc-service
+    ports:
+      - "50000:80"
